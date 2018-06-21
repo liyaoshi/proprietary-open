@@ -17,8 +17,8 @@
 # ducati-m3.bin package, which is defined in the top-level Android.mk
 # of the proprietary-open tree
 
-ifeq ($(TARGET_PRODUCT),$(filter $(TARGET_PRODUCT),full_jacinto6evm full_am57xevm))
-DUCATI_TGZ := device/ti/proprietary-open/jacinto6/ducati_full_jacinto6evm.tgz
-DUCATI_BINARY := dra7-ipu2-fw.xem4
-PRODUCT_PACKAGES += dra7-ipu2-fw.xem4
+ifeq ($(TARGET_PRODUCT),$(filter $(TARGET_PRODUCT),full_jacinto6evm ))
+DUCATI_TGZ := device/ti/proprietary-open/jacinto6/omap5-ipu-fw.xem4.tgz
+DUCATI_BINARY := omap5-ipu-fw.xem4
+PRODUCT_PACKAGES += omap5-ipu-fw.xem4
 endif
